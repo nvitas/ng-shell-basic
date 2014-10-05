@@ -1,0 +1,209 @@
+/* ********** text *************** */
+.text-center {
+	text-align: center;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.text-vertical-middle {
+	vertical-align: middle;
+}
+
+/* ********** font *************** */
+.font-10 {
+	font-size: 10px;
+}
+.font-11 {
+	font-size: 11px;
+}
+.font-12 {
+	font-size: 12px;
+}
+.font-13 {
+	font-size: 13px;
+}
+
+.font-15 {
+	font-size: 15px;
+}
+
+.font-18 {
+	font-size: 18px;
+}
+
+.font-20 {
+	font-size: 20px;
+}
+
+/* ********** dimension *************** */
+.full-width {
+	width: 100%;
+}
+
+.half-width {
+	width: 50%;
+}
+
+.full-height {
+	height: 100%;
+}
+
+.half-height {
+	height: 50%;
+}
+
+.height-40 {
+	height: 40px;
+}
+
+/* ********** cursors*************** */
+.cursor-pointer {
+	cursor: pointer;
+}
+
+/* ********** heights for mobile  *************** */
+.mobile-row-24 {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.mobile-row-12 {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.height-40 {
+	height: 40px;
+}
+
+/* ********** spacers *************** */
+.spacer-10 {
+	margin: 5px;
+}
+
+.spacer-20 {
+	margin: 10px;
+}
+
+/* ********** margin *************** */
+.margin-5 {
+	margin: 5px;
+}
+.margin-left-5 {
+	margin: 5px;
+}
+.margin-left-10 {
+	margin: 5px;
+}
+
+/* ********** padding *************** */
+
+.no-padding {
+	padding: 0px !important;
+}
+
+.padding-3 {
+	padding: 3px;
+}
+
+.padding-5 {
+	padding: 5px;
+}
+
+.padding-10 {
+	padding: 10px;
+}
+
+.padding-20 {
+	padding: 20px;
+}
+
+/* ********** swatches *************** */
+.color-white {
+	color: #ffffff;
+}
+
+.color-grey {
+	color: #95A5A6;
+}
+.color-dark-grey {
+	color: #809394;
+}
+
+/* ********** swatches *************** */
+
+.swatch-dark-red {
+	background: #C0392B;
+}
+
+.swatch-red {
+	background: #E74C3C;
+}
+
+.swatch-dark-blue {
+	background: #2980B9;
+}
+
+.swatch-blue {
+	background: #3498DB;
+}
+
+.swatch-dark-green {
+	background: #27AE60;
+}
+
+.swatch-green {
+	background: #2ECC71;
+}
+
+.swatch-dark-orange {
+	background: #D35400;
+}
+
+.swatch-orange {
+	background: #E67E22;
+}
+
+.swatch-dark-yellow {
+	background: #F39C12;
+}
+
+.swatch-yellow {
+	background: #F1C40F;
+}
+
+.swatch-dark-purple {
+	background: #8E44AD;
+}
+
+.swatch-purple {
+	background: #9B59B6;
+}
+
+.swatch-light-grey {
+	background: #ECF0F1;
+}
+
+.swatch-grey {
+	background: #BDC3C7;
+}
+
+.swatch-dark-grey {
+	background: #7F8C8D;
+}
+
+.swatch-medium-grey {
+	background: #95A5A6;
+}
+
+.swatch-night {
+	background: #34495E;
+}
+
+.swatch-midnight {
+	background: #2C3E50;
+}
+
+

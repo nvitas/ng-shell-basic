@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--<html ng-app="app" ng-controller="AppController">-->
+<html ng-app="app" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon/icon-72@2x.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon/icon-72@2x.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon/icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="images/icon/icon.png">
+    <link rel="icon" type="image/x-icon" href="/images/icon/icon.ico"/>
+
+    <title>word stash</title>
+    <link rel="stylesheet" href="styles/vendor/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="styles/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/vendor/themes/slate.css">
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/layout.css">
+    <!-- endbuild -->
+
+</head>
+<body>
+
+
+    <!--[if lt IE 9]>
+    <script src="scripts/vendor/es5-shim.min.js"></script>
+    <script src="scripts/vendor/json3.min.js"></script>
+    <![endif]-->
+
+    <div>
+        <div class="container">
+            <div ng-view class="app-content"></div>
+        </div>
+    </div>
+
+    <!-- build:js scripts/app.js -->
+    <script src="scripts/vendor/angular.js"></script>
+    <script src="scripts/vendor/angular-route.js"></script>
+    <script src="scripts/vendor/angular-touch.min.js"></script>
+    <script src="scripts/vendor/angular-sanitize.min.js"></script>
+    <script src="scripts/vendor/ui-bootstrap-custom-tpls-0.10.0.min.js"></script>
+    <script src="scripts/vendor/underscore.js"></script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/home.js"></script>
+    <!-- endbuild -->
+
+    <!-- external scripts-->
+    <!-- end external scripts-->
+</body>
+</html>
