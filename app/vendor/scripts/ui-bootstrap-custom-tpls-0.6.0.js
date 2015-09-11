@@ -3,7 +3,7 @@ angular.module("ui.bootstrap.tpls", ["template/carousel/carousel.html","template
 angular.module('ui.bootstrap.transition', [])
 
 /**
- * $transition service provides a consistent interface to trigger CSS 3 transitions and to be informed when they complete.
+ * $transition services provides a consistent interface to trigger CSS 3 transitions and to be informed when they complete.
  * @param  {DOMElement} element  The DOMElement that will be animated.
  * @param  {string|object|function} trigger  The thing that will cause the transition to start:
  *   - As a string, it represents the css class to be added to the element.
@@ -525,7 +525,7 @@ angular.module('ui.bootstrap.modal', [])
   })
 
 /**
- * A helper directive for the $modal service. It creates a backdrop element.
+ * A helper directive for the $modal services. It creates a backdrop element.
  */
   .directive('modalBackdrop', ['$timeout', function ($timeout) {
     return {

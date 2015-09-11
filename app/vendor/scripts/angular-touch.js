@@ -13,7 +13,7 @@
  * # ngTouch
  *
  * The `ngTouch` module provides touch events and other helpers for touch-enabled devices.
- * The implementation is based on jQuery Mobile touch event handling 
+ * The implementation is based on jQuery Mobile touch event handling
  * ([jquerymobile.com](http://jquerymobile.com/)).
  *
  * {@installModule touch}
@@ -35,7 +35,7 @@ var ngTouch = angular.module('ngTouch', []);
      * @name ngTouch.$swipe
      *
      * @description
-     * The `$swipe` service is a service that abstracts the messier details of hold-and-drag swipe
+     * The `$swipe` services is a services that abstracts the messier details of hold-and-drag swipe
      * behavior, to make implementing swipe-related directives more convenient.
      *
      * Requires the {@link ngTouch `ngTouch`} module to be installed.
@@ -44,7 +44,7 @@ var ngTouch = angular.module('ngTouch', []);
      * `ngCarousel` in a separate component.
      *
      * # Usage
-     * The `$swipe` service is an object with a single method: `bind`. `bind` takes an element
+     * The `$swipe` services is an object with a single method: `bind`. `bind` takes an element
      * which is to be watched for swipes, and an object with four handler functions. See the
      * documentation for `bind` below.
      */

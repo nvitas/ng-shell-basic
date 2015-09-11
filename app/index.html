@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!--<html ng-app="app" ng-controller="AppController">-->
-<html ng-app="app" >
+<html ng-app="app" ng-controller="AppController">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="IE=Edge">
@@ -13,22 +12,22 @@
     <link rel="apple-touch-icon-precomposed" href="images/icon/icon.png">
     <link rel="icon" type="image/x-icon" href="/images/icon/icon.ico"/>
 
-    <title>word stash</title>
-    <link rel="stylesheet" href="styles/vendor/bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="styles/vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/vendor/themes/slate.css">
-    <!-- build:css styles/main.css -->
+    <title>New Game Project</title>
+    <link rel="stylesheet" href="vendor/styles/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="vendor/styles/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/styles/themes/slate.css">
+
+    <!-- build:template
+    <link rel="stylesheet" href="<%= minifiedLayoutCSSFile %>"/>
+    <link rel="stylesheet" href="<%= minifiedDirectivesCSSFile %>"/>
+    <!-- /build -->
+
+    <!-- build:remove -->
     <link rel="stylesheet" href="styles/layout.css">
-    <!-- endbuild -->
+    <!-- /build -->
 
 </head>
 <body>
-
-
-    <!--[if lt IE 9]>
-    <script src="scripts/vendor/es5-shim.min.js"></script>
-    <script src="scripts/vendor/json3.min.js"></script>
-    <![endif]-->
 
     <div>
         <div class="container">
@@ -36,19 +35,53 @@
         </div>
     </div>
 
-    <!-- build:js scripts/app.js -->
-    <script src="scripts/vendor/angular.js"></script>
-    <script src="scripts/vendor/angular-route.js"></script>
-    <script src="scripts/vendor/angular-touch.min.js"></script>
-    <script src="scripts/vendor/angular-sanitize.min.js"></script>
-    <script src="scripts/vendor/ui-bootstrap-custom-tpls-0.10.0.min.js"></script>
-    <script src="scripts/vendor/underscore.js"></script>
 
+    <script src="vendor/scripts/angular.js"></script>
+    <script src="vendor/scripts/angular-route.js"></script>
+    <script src="vendor/scripts/angular-touch.min.js"></script>
+    <script src="vendor/scripts/angular-sanitize.min.js"></script>
+    <script src="vendor/scripts/ui-bootstrap-custom-tpls-0.10.0.min.js"></script>
+    <script src="vendor/scripts/underscore.js"></script>
+    <script src="vendor/scripts/iscroll.js"></script>
+
+
+    <!-- build:template
+           <script src="<%= minifiedBuildFile %>"></script>
+           <script src="<%= minifiedDirectivesFile %>"></script>
+           <script src="<%= ngTemplatesFile %>"></script>
+    <!-- /build -->
+
+
+    <!-- build:remove -->
+    <!-- APP SETTINGS -->
+    <script src="scripts/config/appSettings.js"></script>
+
+    <!-- APP CONFIG -->
     <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/home.js"></script>
-    <!-- endbuild -->
+    <script src="scripts/config/appConfig.js"></script>
+    <script src="scripts/config/appSetup.js"></script>
 
-    <!-- external scripts-->
-    <!-- end external scripts-->
+    <!-- UTIL -->
+    <script src="scripts/util/util.js"></script>
+    <script src="scripts/util/logger.js"></script>
+
+    <!-- SERVICES -->
+    <script src="scripts/services/support/localStorageService.js"></script>
+    <script src="scripts/services/support/lastSelectedService.js"></script>
+    <script src="scripts/services/support/navigationService.js"></script>
+    <script src="scripts/services/support/scrollBarService.js"></script>
+    <script src="scripts/services/support/userDataService.js"></script>
+
+    <!-- ROUTES -->
+    <script src="scripts/routes/globalResolve.js"></script>
+    <script src="scripts/routes/mainRoutes.js"></script>
+
+    <!-- CONTROLLERS -->
+    <script src="scripts/controllers/appController.js"></script>
+    <script src="scripts/controllers/home.js"></script>
+
+
+    <!-- /build -->
+
 </body>
 </html>

@@ -8,7 +8,9 @@
 node_modules
 npm-debug.log
 npm-debug.txt
-tmp
+.tmp
+dist
+appCopy
 
 # Intellij
 ###############

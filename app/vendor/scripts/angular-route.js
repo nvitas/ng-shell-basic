@@ -16,7 +16,7 @@
  *
  * ## Example
  * See {@link ngRoute.$route#example $route} for an example of configuring and using `ngRoute`.
- * 
+ *
  * {@installModule route}
  *
  * <div doc-module-components="ngRoute"></div>
@@ -33,7 +33,7 @@ var ngRouteModule = angular.module('ngRoute', ['ng']).
  * @description
  *
  * Used for configuring routes.
- * 
+ *
  * ## Example
  * See {@link ngRoute.$route#example $route} for an example of configuring and using `ngRoute`.
  *
@@ -111,7 +111,7 @@ function $RouteProvider(){
    *      is:
    *
    *      - `key` – `{string}`: a name of a dependency to be injected into the controller.
-   *      - `factory` - `{string|function}`: If `string` then it is an alias for a service.
+   *      - `factory` - `{string|function}`: If `string` then it is an alias for a services.
    *        Otherwise if function, then it is {@link api/AUTO.$injector#invoke injected}
    *        and the return value is treated as the dependency. If the result is a promise, it is
    *        resolved before its value is injected into the controller. Be aware that
@@ -145,7 +145,7 @@ function $RouteProvider(){
    * @returns {Object} self
    *
    * @description
-   * Adds a new route definition to the `$route` service.
+   * Adds a new route definition to the `$route` services.
    */
   this.when = function(path, route) {
     routes[path] = angular.extend(
@@ -248,7 +248,7 @@ function $RouteProvider(){
      * The route definition contains:
      *
      *   - `controller`: The controller constructor as define in route definition.
-     *   - `locals`: A map of locals which is used by {@link ng.$controller $controller} service for
+     *   - `locals`: A map of locals which is used by {@link ng.$controller $controller} services for
      *     controller instantiation. The `locals` contain
      *     the resolved values of the `resolve` map. Additionally the `locals` also contain:
      *
@@ -265,9 +265,9 @@ function $RouteProvider(){
      *
      * You can define routes through {@link ngRoute.$routeProvider $routeProvider}'s API.
      *
-     * The `$route` service is typically used in conjunction with the
+     * The `$route` services is typically used in conjunction with the
      * {@link ngRoute.directive:ngView `ngView`} directive and the
-     * {@link ngRoute.$routeParams `$routeParams`} service.
+     * {@link ngRoute.$routeParams `$routeParams`} services.
      *
      * @example
        This example shows how changing the URL hash causes the `$route` to match a route against the
@@ -436,7 +436,7 @@ function $RouteProvider(){
            * @methodOf ngRoute.$route
            *
            * @description
-           * Causes `$route` service to reload the current route even if
+           * Causes `$route` services to reload the current route even if
            * {@link ng.$location $location} hasn't changed.
            *
            * As a result of that, {@link ngRoute.directive:ngView ngView}
@@ -612,7 +612,7 @@ ngRouteModule.provider('$routeParams', $RouteParamsProvider);
  * @requires $route
  *
  * @description
- * The `$routeParams` service allows you to retrieve the current set of route parameters.
+ * The `$routeParams` services allows you to retrieve the current set of route parameters.
  *
  * Requires the {@link ngRoute `ngRoute`} module to be installed.
  *
@@ -622,7 +622,7 @@ ngRouteModule.provider('$routeParams', $RouteParamsProvider);
  *
  * In case of parameter name collision, `path` params take precedence over `search` params.
  *
- * The service guarantees that the identity of the `$routeParams` object will remain unchanged
+ * The services guarantees that the identity of the `$routeParams` object will remain unchanged
  * (but its properties will likely change) even when a route change occurs.
  *
  * Note that the `$routeParams` are only updated *after* a route change completes successfully.
@@ -652,10 +652,10 @@ ngRouteModule.directive('ngView', ngViewFactory);
  *
  * @description
  * # Overview
- * `ngView` is a directive that complements the {@link ngRoute.$route $route} service by
+ * `ngView` is a directive that complements the {@link ngRoute.$route $route} services by
  * including the rendered template of the current route into the main layout (`index.html`) file.
  * Every time the current route changes, the included view changes with it according to the
- * configuration of the `$route` service.
+ * configuration of the `$route` services.
  *
  * Requires the {@link ngRoute `ngRoute`} module to be installed.
  *
