@@ -14,16 +14,12 @@ app.factory('appSetup', ['localStorage', function (localStorage) {
     function appSetup() {
         //run any app init functions here
         initLocalStorage();
-        initGameConfig();
     }
 
     function initLocalStorage() {
         localStorage.init();
     }
 
-    function initGameConfig() {
-        gameConfig.init(envSettings.gameSettings)
-    }
 
     return service;
 
